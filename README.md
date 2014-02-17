@@ -1,7 +1,13 @@
+This is the REAL Pandacoin !!!PANDA!!!
+https://bitcointalk.org/index.php?topic=460037.0
+
+IRC ===> #p2pool-panda
+
+
 Requirements:
 -------------------------
 Generic:
-* Vertcoin >=0.8.5
+* ThePandaCoin >=0.8.6.2
 * Python >=2.6
 * Twisted >=10.0.0
 * python-argparse (for Python =2.6)
@@ -23,21 +29,19 @@ Running P2Pool:
 To use P2Pool, you must be running your own local bitcoind. For standard
 configurations, using P2Pool should be as simple as:
 
-    python run_p2pool.py
+    python run_p2pool.py --net thepandacoin
 
-Then run your miner program, connecting to 127.0.0.1 on port 9332 with any
+Then run your miner program, connecting to 127.0.0.1 on port 9190 with any
 username and password.
 
 If you are behind a NAT, you should enable TCP port forwarding on your
-router. Forward port 9333 to the host running P2Pool.
+router. Forward port 9190 to the host running P2Pool.
 
 Run for additional options.
 
     python run_p2pool.py --help
 
-Donations towards further development:
--------------------------
-    1HNeqi3pJRNvXybNX4FKzZgYJsdTSqJTbk
+
 
 Official wiki :
 -------------------------
@@ -47,11 +51,11 @@ Alternate web front end :
 -------------------------
 * https://github.com/hardcpp/P2PoolExtendedFrontEnd
 
-Notes for Vertcoin:
+Notes for ThePandaCoin:
 =========================
 Requirements:
 -------------------------
-In order to run P2Pool with the Vertcoin network, you would need to build and install the
+In order to run P2Pool with the ThePandaCoin network, you would need to build and install the
 vtc_scrypt module that includes the scrypt proof of work code that Vertcoin uses for hashes.
 
 Linux:
@@ -84,7 +88,7 @@ http://stackoverflow.com/questions/6034390/compiling-with-cython-and-mingw-produ
 Running P2Pool:
 -------------------------
 Run P2Pool with the "--net vertcoin" option.
-Run your miner program, connecting to 127.0.0.1 on port 9171.
+Run your miner program, connecting to 127.0.0.1 on port 9190.
 
 Notes for Cachecoin:
 =========================
