@@ -142,22 +142,22 @@ nets = dict(
         VERSION_CHECK=lambda v: True,
     ),
 
-    cachecoin=math.Object(
-        PARENT=networks.nets['cachecoin'],
-        SHARE_PERIOD=120, # seconds
-        CHAIN_LENGTH=12*60*60//120, # shares
-        REAL_CHAIN_LENGTH=12*60*60//120, # shares
-        TARGET_LOOKBEHIND=30, # shares
-        SPREAD=36, # blocks
-        IDENTIFIER='65375c4f7a4d584f'.decode('hex'),
-        PREFIX='642a2c6524364268'.decode('hex'),
-        P2P_PORT=2226,
+    thepandacoin=math.Object(
+        PARENT=networks.nets['thepandacoin'],
+        SHARE_PERIOD=15, # seconds
+        CHAIN_LENGTH=24*60*60//10, # shares
+        REAL_CHAIN_LENGTH=24*60*60//10, # shares
+        TARGET_LOOKBEHIND=200, # shares
+        SPREAD=12, # blocks
+        IDENTIFIER='a06a81c827cdb842'.decode('hex'),
+        PREFIX='7c3614a6bcebe864'.decode('hex'),
+        P2P_PORT=9187,
         MIN_TARGET=4,
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
-        WORKER_PORT=8336,
-        BOOTSTRAP_ADDRS='207.30.158.106 p2cache.syware.de q39.qhor.net q30.qhor.net'.split(' '),
-        ANNOUNCE_CHANNEL='#cachecoin-bots',
+        WORKER_PORT=9190,
+        BOOTSTRAP_ADDRS='panda.qemulab.com bk-eu.cloudapp.net'.split(' '),
+        ANNOUNCE_CHANNEL='#p2pool-panda',
         VERSION_CHECK=lambda v: True,
     ),
 )
