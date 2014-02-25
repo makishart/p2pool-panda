@@ -160,6 +160,7 @@ nets = dict(
         ANNOUNCE_CHANNEL='#p2pool-panda',
         VERSION_CHECK=lambda v: True,
     ),
+    
     suncoin=math.Object(
         PARENT=networks.nets['suncoin'],
         SHARE_PERIOD=12, # seconds
